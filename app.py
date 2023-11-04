@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import requests
 from jinja2 import Environment, FileSystemLoader
-import auth
 import os
 
 class DataExtractor:
