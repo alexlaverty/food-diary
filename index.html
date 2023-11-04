@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Diary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 150px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+            /* Add drop shadow to the right side */
+        }
+
+        .sidebar::before {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 100%;
+            background-color: #fff;
+            /* Vertical line color */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 10px;
+        }
+
+        .sidebar a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        .content {
+            margin-left: 150px;
+            /* Set the same width as the sidebar */
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-family: "BureauGrot-UltraBlack";
+            font-style: normal;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            font-size: 2rem;
+            line-height: 1.1;
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #000;
+        }
+
+        /* Style the container div for horizontal layout */
+        .horizontal-container {
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-family: Verdana;
+        }
+
+        /* Style each entry div as inline-block to display horizontally */
+        .entry {
+            display: inline-block;
+            width: 162px;
+            /* Set the width to 200 pixels */
+            height: 140px;
+            /* Set the height to 200 pixels */
+            margin: 1px;
+            vertical-align: top;
+            border: 1px solid #ccc;
+            padding: 1px;
+            text-align: center;
+            /* Center the text content horizontally */
+        }
+
+        .entryname {
+            max-height: 100%;
+            max-width: 100%;
+            font-size: 0.8em;
+
+        }
+
+        .entryname.break {
+            word-wrap: break-word;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .entryimage {
+            display: inline-block;
+            object-fit: contain;
+            max-height: 100%;
+            max-width: 100%;
+            height: 80px;
+        }
+
+        .entryimage img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .entry p {
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 3px;
+            font-family: Verdana;
+        }
+
+        /* Larger font size for entry descriptions when the type is "stool" */
+        .entry p.stool-description {
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Diet</h1>
+        
+        <h2>2023-10-27</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-26</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Fishbowl
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/b59c5d03-739c-11ee-adc5-cb7355520566.jpg" alt="Fishbowl"
+                        title="2023-10-26T01:12:32.234000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-20</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Oatmeal
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-19</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-18</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Tumeric tea
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Fruit
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-08</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Oats and fruit
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/d233d343-6568-11ee-b9c3-65f527e9023d.jpg" alt="Oats and fruit"
+                        title="2023-10-07T23:25:52.990000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-04</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-10-03</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-09-20</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Fruit box
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/9b77c6f3-575c-11ee-8efa-83b8a46bd497.jpg" alt="Fruit box"
+                        title="2023-09-20T02:23:07.737000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-09-08</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-08-24</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-08-20</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-08-16</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-08-05</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-08-03</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-08-01</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Pork noodles
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/43e7dc93-305b-11ee-9dc9-e9ea0c884566.jpg" alt="Pork noodles"
+                        title="2023-08-01T11:05:15.687000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-31</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Bacon egg McMuffin
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/dd3d1730-2f33-11ee-8f83-b77f85a0163f.jpg" alt="Bacon egg McMuffin"
+                        title="2023-07-30T23:50:53.285000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/ec4422f3-2f33-11ee-8f83-b77f85a0163f.jpg" alt="Coffee"
+                        title="2023-07-30T23:51:10.288000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Redbull
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/7b5850c3-2f3d-11ee-8f83-b77f85a0163f.jpg" alt="Redbull"
+                        title="2023-07-31T00:59:33.246000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Sweet potato and frozen vegetables
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/5c03df23-2f54-11ee-8f83-b77f85a0163f.jpg" alt="Sweet potato and frozen vegetables"
+                        title="2023-07-31T03:43:24.515000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Fruit platter
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/f7538123-2f53-11ee-8f83-b77f85a0163f.jpg" alt="Fruit platter"
+                        title="2023-07-31T03:40:30.547000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Cheese tomato crackers
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/03021313-2f54-11ee-8f83-b77f85a0163f.jpg" alt="Cheese tomato crackers"
+                        title="2023-07-31T03:40:51.066000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/371b87d3-2f59-11ee-8f83-b77f85a0163f.jpg" alt="Coffee"
+                        title="2023-07-31T04:18:03.025000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Chicken burger
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/15311a53-2f76-11ee-9c32-595e826ddb43.jpg" alt="Chicken burger"
+                        title="2023-07-31T07:44:50.505000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Laksa prawn
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/f099b743-2f7c-11ee-9c32-595e826ddb43.jpg" alt="Laksa prawn"
+                        title="2023-07-31T08:33:48.080000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Ice cream
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/d99de1b3-2f86-11ee-9c32-595e826ddb43.jpg" alt="Ice cream"
+                        title="2023-07-31T09:44:43.438000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-30</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Banana bread
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Shake
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/5994d6d3-2e97-11ee-8f83-b77f85a0163f.jpg" alt="Shake"
+                        title="2023-07-30T05:10:18.830000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Chicken burger
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/9bd7ec73-2e98-11ee-8f83-b77f85a0163f.jpg" alt="Chicken burger"
+                        title="2023-07-30T05:19:21.152000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Shandong Chicken
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/29b8bed0-2eac-11ee-8f83-b77f85a0163f.jpg" alt="Shandong Chicken"
+                        title="2023-07-30T07:39:19.388000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Shake
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/508a1f70-2ebd-11ee-8f83-b77f85a0163f.jpg" alt="Shake"
+                        title="2023-07-30T09:42:15.062000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-29</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Egg bacon roll
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/a4d56c33-2da8-11ee-8f83-b77f85a0163f.jpg" alt="Egg bacon roll"
+                        title="2023-07-29T00:41:39.724000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Sardines
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/75066f63-2dc4-11ee-8f83-b77f85a0163f.jpg" alt="Sardines"
+                        title="2023-07-29T04:00:45.699000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Apple
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Herbal tea
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/0dce26a3-2dc7-11ee-8f83-b77f85a0163f.jpg" alt="Herbal tea"
+                        title="2023-07-29T04:19:17.564000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Redbull
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/89672d43-2df2-11ee-8f83-b77f85a0163f.jpg" alt="Redbull"
+                        title="2023-07-29T09:30:34.998000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Mixed meal
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/0036c4f3-2e1e-11ee-8f83-b77f85a0163f.jpg" alt="Mixed meal"
+                        title="2023-07-29T14:41:50.510000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Chicken rice
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/221b6313-2e22-11ee-8f83-b77f85a0163f.jpg" alt="Chicken rice"
+                        title="2023-07-29T15:11:15.641000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-28</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Spaghetti
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/922ceed3-2d3c-11ee-a114-bf7e515006ba.jpg" alt="Spaghetti"
+                        title="2023-07-28T11:48:01.267000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-27</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-26</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Banana
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Apple
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Beef Jerky
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Vegemite and cheese sandwich
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-18</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Shake
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-07-09</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Salad  and spaghetti
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/a97c81f3-1e45-11ee-8f71-676ad03a445e.jpg" alt="Salad  and spaghetti"
+                        title="2023-07-09T10:45:36.747000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-06-05</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Coffee
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-06-04</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Rogan Josh curry
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/ae2772d3-02ae-11ee-88d8-1950c760aa80.jpg" alt="Rogan Josh curry"
+                        title="2023-06-04T08:06:30.704000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Redbull
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Chocolate cake
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/42bee9b3-02b8-11ee-88d8-1950c760aa80.jpg" alt="Chocolate cake"
+                        title="2023-06-04T09:15:05.621000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Noodles
+                </div>
+                
+                <div class="entryimage">
+                    <img src="images/948a54c2-02d4-11ee-88d8-1950c760aa80.jpg" alt="Noodles"
+                        title="2023-06-04T12:37:46.048000Z">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <h2>2023-05-27</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            
+            
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                
+                <div class="entryname">
+                    Oatmeal
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        <hr>
+        
+    </div>
+</body>
+
+</html>
