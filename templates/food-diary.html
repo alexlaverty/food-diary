@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Diary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 150px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+            /* Add drop shadow to the right side */
+        }
+
+        .sidebar::before {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 100%;
+            background-color: #fff;
+            /* Vertical line color */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 10px;
+        }
+
+        .sidebar a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        .content {
+            margin-left: 150px;
+            /* Set the same width as the sidebar */
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-family: "BureauGrot-UltraBlack";
+            font-style: normal;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            font-size: 2rem;
+            line-height: 1.1;
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #000;
+        }
+
+        /* Style the container div for horizontal layout */
+        .horizontal-container {
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-family: Verdana;
+        }
+
+        /* Style each entry div as inline-block to display horizontally */
+        .entry {
+            display: inline-block;
+            width: 162px;
+            /* Set the width to 200 pixels */
+            height: 140px;
+            /* Set the height to 200 pixels */
+            margin: 1px;
+            vertical-align: top;
+            border: 1px solid #ccc;
+            padding: 1px;
+            text-align: center;
+            /* Center the text content horizontally */
+        }
+
+        .entryname {
+            max-height: 100%;
+            max-width: 100%;
+            font-size: 0.8em;
+
+        }
+
+        .entryname.break {
+            word-wrap: break-word;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .entryimage {
+            display: inline-block;
+            object-fit: contain;
+            max-height: 100%;
+            max-width: 100%;
+            height: 80px;
+        }
+
+        .entryimage img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .entry p {
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 3px;
+            font-family: Verdana;
+        }
+
+        /* Larger font size for entry descriptions when the type is "stool" */
+        .entry p.stool-description {
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Diet</h1>
+        {% for user_date, entries in grouped_data.items() %}
+        <h2>{{ user_date }}</h2>
+        <div class="horizontal-container">
+            <!-- Add the container div -->
+            {% for entry in entries %}
+            {% if entry.type == 'food' %}
+            <div class="entry">
+                <!-- Add the class to each entry div -->
+                {% for mealItem in entry.mealItems %}
+                <div class="entryname">
+                    {{ mealItem.name }}
+                </div>
+                {% if mealItem.hasImage %}
+                <div class="entryimage">
+                    <img src="images/{{ mealItem.realmIdString }}.jpg" alt="{{ mealItem.name }}"
+                        title="{{ entry.timestampEntry  }}">
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+# Give your gitflow action a name
+name: Food Diary
+
+# Set a schedule to run, note it's in UTC time, so do the time conversion for your location
+on:
+  schedule:
+    - cron: '0 */12 * * *' # runs every 12 hours
+
+# Also run the build if I push anything into the master branch
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9 #install the python needed
+         
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python app.py
+        env:
+          CARA_XTOKEN: ${{ secrets.CARA_XTOKEN }}
+
+      - name: Git Push Updates
+        run: |
+          [[ -z $(git status -s) ]] || (
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Food Diary Scheduled Update" -a
+          git push -f)
